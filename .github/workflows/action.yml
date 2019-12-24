@@ -22,6 +22,6 @@ jobs:
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: Chongqing Weather Report
           body: file://result.html
-          to: 371797442@qq.com
+          to: ${{ secrets.MAIL_TOME }}
           from: GitHub Actions
           content_type: text/html
