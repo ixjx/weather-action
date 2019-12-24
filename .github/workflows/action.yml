@@ -14,14 +14,14 @@ jobs:
       - name: 'Get Result'
         run: bash ./weather.sh
       - name: 'Send mail'
-        uses: dawidd6/action-send-mail@master
+        uses: ixjx/action-send-mail@master
         with:
           server_address: smtp.163.com
           server_port: 465
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: Chongqing Weather Report
-          body: <img src=file://Chongqing.png>
+          body: Chongqing.png
           to: ${{ secrets.MAIL_TOME }}
           from: GitHub Actions
-          content_type: text/html
+          content_type: image/png
