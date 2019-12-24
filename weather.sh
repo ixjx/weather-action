@@ -10,4 +10,4 @@ curl \
   -H "Accept-Language: $LANGUAGE" \
   -H "User-Agent: $UA" \
   -o result.html \
-  v2.wttr.in/$CITY
+  wttr.in/$CITY?format=4\&$UNIT
