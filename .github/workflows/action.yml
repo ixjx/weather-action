@@ -21,7 +21,7 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: Chongqing Weather Report
-          body: Chongqing.png
+          body: file://Chongqing.png
           to: ${{ secrets.MAIL_TOME }}
           from: GitHub Actions
           content_type: image/png
